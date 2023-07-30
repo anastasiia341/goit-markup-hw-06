@@ -1,9 +1,53 @@
+@media screen and (max-height: 500px) {
+    .modal{
+        top: 20%;
+        transform: translate(-50%);
+    }
+    
+    .backdrop{
+        overflow: scroll;
+    }
+}
+
+@media screen and (max-width: 427px) {
+    .mob-media-list{
+        gap: 32px;
+    }
+
+    .mob-phone{
+        font-size: 24px;
+    }
+
+
+}
+    
+
+
 @media screen and (min-width: 428px) {
     .container{
         max-width: 428px;
     }
+
+    .modal{
+        width: 392px;
+    }
+
+        .hero {
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                    rgba(46, 47, 66, 0.7)), url(../images/herobg-tab.jpg);
     
+        }
+
+           @media (min-device-pixel-ratio: 2),
+           (min-resolution: 192dpi),
+           (min-resolution: 2dppx) {
+               .hero {
+                   background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                           rgba(46, 47, 66, 0.7)), url(../images/herobg-tab-2x.jpg);
+               }
+           }
     
+
 }
 
 
@@ -15,13 +59,11 @@
     }
 
     .header-container{
-        max-height: 72px;
+
     }
 
-        .nav-menu {
-            display: flex;
-            align-items: center;
-    
+        .header-logo{
+            margin-right: 120px;
         }
     
         .nav-list {
@@ -44,7 +86,7 @@
             content: "";
             position: absolute;
             left: 0;
-            bottom: 0;
+            bottom: -1px;
             width: 100%;
             height: 4px;
             border-radius: 2px;
@@ -58,7 +100,7 @@
             display: flex;
             flex-direction: column;
             gap: 12px;
-            padding: 16px 0;
+            justify-content: center;
     
         }
     
@@ -104,7 +146,7 @@
 
     .hero{
         background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-                    rgba(46, 47, 66, 0.7)), url(../images/herobg-tab.jpg);
+                    rgba(46, 47, 66, 0.7)), url(../images/herobg-desktop.jpg);
                    
     }
 
@@ -113,7 +155,7 @@
         (min-resolution: 2dppx) {
             .hero {
                 background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-                        rgba(46, 47, 66, 0.7)), url(../images/herobg-tab-2x.jpg);
+                        rgba(46, 47, 66, 0.7)), url(../images/herobg-desktop-2x.jpg);
             }
         }
 
@@ -138,11 +180,18 @@
         text-align: left;
     }
 
+    .section-team .container{
+        width: 582px;
+        padding-left: 15px;
+        padding-right: 15px;
+    } 
+
 
     .team-list{
         flex-direction: row;
         flex-wrap: wrap;
-        gap: 72px 24px;
+        gap: 64px 24px;
+        
     }
 
     .team-list-item{
@@ -154,12 +203,18 @@
         padding-bottom: 96px;
     }
 
+    .customers .container{
+        width: 582px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
     .customers-list{
         gap: 72px 24px;
     }
 
     .customers-list-item{
-        
+        flex-basis: calc((100%- 48px) / 3);
     }
 
     .customers-link{
@@ -168,22 +223,24 @@
 
     .footer .container{
         width: 582px;
+        padding-left: 15px;
+        padding-left: 15px;
         flex-direction: row;
         flex-wrap: wrap;
         gap: 72px 24px;
        
     }
 
-    .footer-logo{
-        justify-content: flex-start;
+    .logo-footer-block{
+        align-items: flex-start;
     }
 
-    .social-media-text{
-        text-align: left;
-    }
+   .social-media{
+    align-items: start;
+   }
 
     .subscribe-text{
-        text-align: left;
+        text-align: start;
     }
 
     .subscribe-block{
@@ -192,6 +249,10 @@
 
     .subscribe-input{
         width: 264px;
+    }
+
+    .modal{
+        width: 408px;
     }
 
     
@@ -208,6 +269,16 @@
     }
     
 
+    .header-container{
+        justify-content: ;
+    }
+
+    .header-logo{
+        margin-right: 76px;
+    }
+
+    
+
         .address-list {
             display: flex;
             flex-direction: row;
@@ -217,7 +288,7 @@
       
     .hero{
         background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-                rgba(46, 47, 66, 0.7)), url(../images/herobcg.jpg);
+                rgba(46, 47, 66, 0.7)), url(../images/herobg-desktop.jpg);
         padding: 188px 0;       
 
     }
@@ -235,9 +306,6 @@
         margin-bottom: 48px;
     }
 
-    .header-container{
-        justify-content: space-around;
-    }
 
     .features-list{
         flex-direction: row;
@@ -287,7 +355,12 @@
         padding: 120px 0;
     }
 
+    .section-team .container{
+        width: 100%;
+    }
+
     .team-list{
+        justify-content: center;
         flex-wrap: nowrap;
         gap: 24px;
     }
@@ -299,6 +372,10 @@
 
     .customers{
         padding: 120px 0; 
+    }
+
+    .customers .container{
+        width: 100%;
     }
 
     .customers-list{
@@ -319,6 +396,15 @@
     .footer .container{
         width: 100%;
         flex-wrap: nowrap;
+        gap: 0;
+    }
+
+    .logo-footer-block{
+        margin-right: 120px;
+    }
+
+    .social-media{
+        margin-right: 80px;
     }
 
     
